@@ -1,13 +1,10 @@
-import java.util.Arrays;
-
 public class PremiereClasse {
 
 	public static void main(String[] args) {
-		String bonjour[] = { "Bonjour ", " à tous !" };
+		String tab[] = { "Tu as ", " ans" };
+		int age = 18;
 		
-		for (String str : bonjour) {
-			System.out.print(str);
-		}
+		System.out.println(tab[0] + age + tab[1]);
 	}
 
 }
