@@ -1,11 +1,11 @@
+import java.util.Arrays;
 
 public class PremiereClasse {
 
 	public static void main(String[] args) {
-		String bonjour = "Bonjour ";
-		String suite = " à tous !";
+		String bonjour[] = { "Bonjour ", " à tous !" };
 		
-		System.out.print(bonjour + suite);
+		System.out.print(Arrays.toString(bonjour));
 	}
 
 }
