@@ -2,8 +2,10 @@
 public class PremiereClasse {
 
 	public static void main(String[] args) {
-		System.out.print("Bonjour ");
-		System.out.print("à tous !");
+		String bonjour = "Bonjour ";
+		String suite = " à tous !";
+		
+		System.out.print(bonjour + suite);
 	}
 
 }
