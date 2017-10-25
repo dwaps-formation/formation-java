@@ -3,6 +3,9 @@ import java.util.Scanner;
 public class PremiereClasse {
 
 	public static void main(String[] args) {
+		final int MONTH_31DAYS = 31;
+		final int MONTH_30DAYS = 30;
+		
 		String datesBuilder[][] = {
 			{ "", "janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre" },
 			{ "", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche" }
@@ -17,18 +20,18 @@ public class PremiereClasse {
 			nbOfDay = sc.nextInt();
 			sc.nextLine();
 			
-			if (nbOfDay < 31*1) month = 1;
-			else if (nbOfDay <= (31*1 + 30*1-1)) month = 2;
-			else if (nbOfDay <= (31*2 + 30*1-1)) month = 3;
-			else if (nbOfDay <= (31*2 + 30*2-1)) month = 4;
-			else if (nbOfDay <= (31*3 + 30*2-1)) month = 5;
-			else if (nbOfDay <= (31*3 + 30*3-1)) month = 6;
-			else if (nbOfDay <= (31*4 + 30*3-1)) month = 7;
-			else if (nbOfDay <= (31*5 + 30*3-1)) month = 8;
-			else if (nbOfDay <= (31*5 + 30*4-1)) month = 9;
-			else if (nbOfDay <= (31*6 + 30*4-1)) month = 10;
-			else if (nbOfDay <= (31*6 + 30*5-1)) month = 11;
-			else if (nbOfDay <= (31*7 + 30*5-1)) month = 12;
+			if (nbOfDay < MONTH_31DAYS*1) month = 1;
+			else if (nbOfDay <= (MONTH_31DAYS*1 + MONTH_30DAYS*1-1)) month = 2;
+			else if (nbOfDay <= (MONTH_31DAYS*2 + MONTH_30DAYS*1-1)) month = 3;
+			else if (nbOfDay <= (MONTH_31DAYS*2 + MONTH_30DAYS*2-1)) month = 4;
+			else if (nbOfDay <= (MONTH_31DAYS*3 + MONTH_30DAYS*2-1)) month = 5;
+			else if (nbOfDay <= (MONTH_31DAYS*3 + MONTH_30DAYS*3-1)) month = 6;
+			else if (nbOfDay <= (MONTH_31DAYS*4 + MONTH_30DAYS*3-1)) month = 7;
+			else if (nbOfDay <= (MONTH_31DAYS*5 + MONTH_30DAYS*3-1)) month = 8;
+			else if (nbOfDay <= (MONTH_31DAYS*5 + MONTH_30DAYS*4-1)) month = 9;
+			else if (nbOfDay <= (MONTH_31DAYS*6 + MONTH_30DAYS*4-1)) month = 10;
+			else if (nbOfDay <= (MONTH_31DAYS*6 + MONTH_30DAYS*5-1)) month = 11;
+			else if (nbOfDay <= (MONTH_31DAYS*7 + MONTH_30DAYS*5-1)) month = 12;
 			
 			System.out.println(datesBuilder[0][month]);
 			
